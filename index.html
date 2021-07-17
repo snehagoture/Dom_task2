@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+<script>
+    function myfunction(){
+        var tb1=document.getElementById("mytable");
+        var row=tb1.insertRow();
+        var cell1=row.insertCell();
+        var cell2=row.insertCell();
+        var cell3=row.insertCell();
+        var cell4=row.insertCell();
+        var cell5=row.insertCell();
+        var cell6=row.insertCell();
+        var cell7=row.insertCell();
+        var cell8=row.insertCell();
+        cell1.innerHTML=document.getElementById("f_name").value;
+        cell2.innerHTML=document.getElementById("l_name").value;
+        cell3.innerHTML=document.getElementById("Address").value;
+        cell4.innerHTML=document.getElementById("Pin").value;
+        cell5.innerHTML=document.getElementById("Gender").value;
+        cell6.innerHTML=document.getElementById("Food").value;
+        cell7.innerHTML=document.getElementById("State").value;
+        cell8.innerHTML=document.getElementById("Country").value;
+        
+    
+    
+    }
+</script>
+
+
+
+
+
+
+</head>
+<body>
+    <h1 style="text-align: center;" >Survey Form</h1>
+    <form onsubmit="myfunction() ;return false;"onsubmit="foo()" style="text-align: center;"   on   required>
+  <input type="text" id="f_name" placeholder="Enter First Name"  class="form-group" required  /><br>
+  <input type="text" id="l_name" placeholder="Enter Last Name"  class="form-group" required/><br>
+  <input type="text" id="Address" placeholder="Enter Address" class="form-group" required/><br>
+  <input type="number" id="Pin" min="1" pattern="[0-9]{6}" class="form-group" placeholder="Enter Pin"required/><br>
+  <input type="text" id="Gender" placeholder="Specify your Gender" class="form-group" required/><br>
+  <input type="text" id="Food" placeholder="Enter your Favourite Food" class="form-group" required/><br>
+  <input type="text" id="State" placeholder="Enter State "class="form-group" required/><br>
+  <input type="text" id="Country" placeholder="Enter Country"  class="form-group"required/><br>
+<input type="submit" value="Submit the survey " class="btn btn-primary" />
+<input type="reset" value="Reset" class="btn btn-primary" />
+        
+    </form>
+    <h1>Candidates</h1>
+    <table border="1" id="mytable">
+        <tr>
+            <td>First_name</td>
+            <td>Last_name</td>
+            <td>Address</td>
+            <td>Pin</td>
+            <td>Gender</td>
+            <td>Food</td>
+            <td>State</td>
+            <td>Country</td>
+        </tr>
+
+    </table>
+</body>
+</html>
+
+
